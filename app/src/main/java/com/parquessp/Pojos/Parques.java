@@ -4,11 +4,23 @@ public class Parques {
 
     private String nome;
     private String descrição;
+    private String imagem;
 
-    public Parques(String nome, String descrição) {
+    public Parques(String nome, String descrição, String imagem) {
         this.nome = nome;
         this.descrição = descrição;
+        this.imagem = imagem;
     }
+
+
+    public String getImagem() {
+        return imagem;
+    }
+
+    public void setImagem(String imagem) {
+        this.imagem = imagem;
+    }
+
 
     public String getNome() {
         return nome;

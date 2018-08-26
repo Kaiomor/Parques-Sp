@@ -7,8 +7,17 @@
     tools:context=".Activitis.MainActivity">
 
 
+    <TextView
+        android:id="@+id/descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Lista de Parques"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/Recycler"
         android:layout_width="match_parent"
-        android:layout_height="595dp"/>
+        android:layout_height="match_parent"/>
 </android.support.constraint.ConstraintLayout>

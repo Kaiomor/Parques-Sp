@@ -1,4 +1,4 @@
-package com.parquessp.Adapters;
+package com.parquessp.Helpers;
 
 import android.view.View;
 
