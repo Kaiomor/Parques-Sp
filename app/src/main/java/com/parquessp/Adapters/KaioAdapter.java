@@ -28,9 +28,6 @@ public class KaioAdapter extends  RecyclerView.Adapter<KaioAdapter.ViewHolder> {
 
     }
 
-    public KaioAdapter(String a1, String s, String ibirapuera) {
-    }
-
     @NonNull
     @Override
     public KaioAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -41,7 +38,8 @@ public class KaioAdapter extends  RecyclerView.Adapter<KaioAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Parques parque = listaDeParques.get(position);
-        holder.bind(parque.getNome(),parque.getDescrição(), parque.getImagem());
+        holder.bind(parque.getNome(),parque.getDescricao(), parque.getDescricao()
+        );
 
 
     }
@@ -86,9 +84,9 @@ public class KaioAdapter extends  RecyclerView.Adapter<KaioAdapter.ViewHolder> {
 
         }
 
-        public void bind(String nome,String descrição, String imagem){
+        public void bind(String nome,String descricao, String imagem){
             this.text.setText(nome);
-            this.text2.setText(descrição);
+            this.text2.setText(descricao);
             this.imageView.setImageResource(getImageDrawableResId(imagem));
         }
 
